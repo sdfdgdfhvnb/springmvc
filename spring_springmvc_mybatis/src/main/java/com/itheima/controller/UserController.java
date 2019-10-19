@@ -15,13 +15,6 @@ import java.util.List;
 @Controller
 public class UserController {
 
-    // 第一个人开发的代码
-    public void print() {
-        System.out.println("11111111111111");
-        System.out.println("11111111111111");
-        System.out.println("22222222222222");
-    }
-
     // 定义用户service
     @Autowired
     private UserService userService;
