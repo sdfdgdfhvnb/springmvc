@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace必须是接口的全路径-->
+<mapper namespace="com.itheima.dao.UserDao">
+
+    <!--查询全部用户列表数据-->
+    <select id="findAllUser" resultType="user">
+      select * from `user`
+    </select>
+
+    <!--添加用户-->
+    <insert id="insertUser" parameterType="user">
+        insert into `user`(username,password,email,phoneNum)
+        values(#{username},#{password},#{email},#{phoneNum})
+    </insert>
+
+    <!--根据用户id查询用户-->
+    <select id="findUserById" parameterType="int" resultType="user">
+        select * from `user` where id=#{id}
+    </select>
+
+    <!--修改用户-->
+    <update id="updateUser" parameterType="user">
+        update `user` set username=#{username},email=#{email},phoneNum=#{phoneNum} where id=#{id}
+    </update>
+
+</mapper>
