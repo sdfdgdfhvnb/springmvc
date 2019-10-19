@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * 用户dao接口
+ * 时间需现场发给对方
  */
 public interface UserDao {
 
