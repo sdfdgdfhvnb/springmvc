@@ -13,7 +13,7 @@
 
     <properties>
         <!--spring 版本-->
-        <spring.version>5.0.2.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <!-- jstl标签版本 -->
         <jstl.version>1.2</jstl.version>
         <!--servlet版本-->
